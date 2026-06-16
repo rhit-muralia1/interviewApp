@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSP Audio Processing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DSP Audio Processing Studio</h1>
+        <p>Advanced Digital Signal Processing for Audio Analysis</p>
+    </header>
+    
+    <main>
+        <section class="control-panel">
+            <div class="input-group">
+                <label for="audio-file">Upload Audio:</label>
+                <input type="file" id="audio-file" accept="audio/*">
+            </div>
+            <button id="analyze-btn">Analyze</button>
+        </section>
+        
+        <section class="visualization">
+            <div class="canvas-container">
+                <canvas id="waveform-canvas"></canvas>
+                <p>Waveform</p>
+            </div>
+            <div class="canvas-container">
+                <canvas id="spectrum-canvas"></canvas>
+                <p>Frequency Spectrum</p>
+            </div>
+        </section>
+        
+        <section class="analysis-results">
+            <div id="results"></div>
+        </section>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
